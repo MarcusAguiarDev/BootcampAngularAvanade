@@ -1,0 +1,136 @@
+:root {
+    --black: #111111;
+    --offWithe: #fafafa;
+    --blue: #2D8EEF;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--offWithe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 60%;
+}
+
+.phone{
+    background-image: url("../assets/phone.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.card{
+    background-color: #FFFFFF;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+}
+
+.card:nth-child(2){
+    gap: 10px;
+}
+
+.account {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.account h2 {
+    font-size: 2.6rem;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.account .profilePhoto {
+    background-image: url("../assets/profile.jpg");
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.account .continueAs {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px;
+    background-color: var(--blue);
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.account .continueAs:hover {
+    color: #FFFFFF;
+    -webkit-filter: brightness(110%);
+}
+
+.account .getApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account .getApp .download {
+    margin-top: 16px;
+    display: flex;
+    gap: 5px;
+}
+
+.account .getApp .download img {
+    width: 130px;
+}
+
+a:hover {
+    -webkit-filter: brightness(110%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 950px){
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    main {
+        width: 100%;
+    }
+    .phone{
+        display: none;
+    }
+}
